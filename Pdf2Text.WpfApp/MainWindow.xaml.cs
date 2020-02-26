@@ -29,18 +29,26 @@ namespace Pdf2Text.WpfApp
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            var openFileDialog = new OpenFileDialog() {
+            var openFileDialog = new OpenFileDialog()
+            {
                 Filter = "PDF files (*.pdf)|*.pdf"
             };
 
-            openFileDialog.FileOk += Dial_FileOk;
+            if (openFileDialog.ShowDialog() != true)
+                return;
 
-            openFileDialog.ShowDialog();
-        }
+            try
+            {
+                textBox.Text = PdfUtils.Pdf2Text(openFileDialog.FileName);
 
-        private void Dial_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-            textBox.Text = PdfUtils.Pdf2Text((sender as OpenFileDialog).FileName);
+                if (string.IsNullOrWhiteSpace(textBox.Text))
+                    MessageBox.Show("The selected pdf file does not contain any text", "Info");
+            }
+            catch (Exception ex)
+            {
+                textBox.Text = string.Empty;
+                MessageBox.Show(ex.Message, "Error");
+            }
         }
     }
 }

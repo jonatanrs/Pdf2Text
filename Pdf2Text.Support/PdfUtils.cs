@@ -14,7 +14,7 @@ namespace Pdf2Text.Support
             {
                 var stringBuilder = new StringBuilder();
 
-                for (var i = 1; i<=pdfDocument.GetNumberOfPages(); i++)
+                for (var i = 1; i <= pdfDocument.GetNumberOfPages(); i++)
                     stringBuilder.Append(PdfTextExtractor.GetTextFromPage(pdfDocument.GetPage(i)));
 
                 return stringBuilder.ToString().Replace("\n", "\r\n");
