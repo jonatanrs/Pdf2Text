@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pdf2Text.WpfApp", "Pdf2Text.WpfApp\Pdf2Text.WpfApp.csproj", "{21AB01EB-5207-43A9-AAD8-00AEA978D6EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pdf2Text.Support", "Pdf2Text.Support\Pdf2Text.Support.csproj", "{77660446-1092-405C-A641-B2A4C79E4201}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21AB01EB-5207-43A9-AAD8-00AEA978D6EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21AB01EB-5207-43A9-AAD8-00AEA978D6EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21AB01EB-5207-43A9-AAD8-00AEA978D6EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21AB01EB-5207-43A9-AAD8-00AEA978D6EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77660446-1092-405C-A641-B2A4C79E4201}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77660446-1092-405C-A641-B2A4C79E4201}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77660446-1092-405C-A641-B2A4C79E4201}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77660446-1092-405C-A641-B2A4C79E4201}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {29E00000-1022-4D9A-8F0E-4A8BAC0CC012}
+	EndGlobalSection
+EndGlobal
